@@ -1,0 +1,132 @@
+.wrapper {
+  max-width: 70rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+
+.taskForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: -3.375rem;
+}
+
+.taskForm input {
+  flex: 1;
+  background: var(--gray-500);
+  border: 0;
+  height: 3.375rem;
+  padding: 1rem;
+  border-radius: 8px;
+  color: var(--gray-100);
+  line-height: 1.4;
+}
+
+.taskForm input::placeholder {
+  color: var(--gray-300);
+}
+
+.taskForm button[type='submit'] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  height: 100%;
+  width: 5.625rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 0;
+  background: var(--blue-600);
+  color: var(--gray-100);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.taskForm button[type='submit']:not(:disabled):hover {
+  background: var(--blue-500);
+}
+
+.taskForm button[type='submit']:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.tabs .tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tabs .tab > span {
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.tabs .tab > span.createdText {
+  color: var(--blue-500);
+}
+
+.tabs .tab > span.completedText {
+  color: var(--purple-500);
+}
+
+.tabs .tab .counter {
+  height: 1.1875rem;
+  min-width: 1.5rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--gray-400);
+  color: var(--gray-200);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.emptyList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-top: 1px solid var(--gray-400);
+  padding: 4rem 1.5rem;
+}
+
+.emptyList svg {
+  margin-bottom: 1rem;
+}
+
+.emptyList p {
+  color: var(--gray-300);
+  line-height: 1.4;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+}
