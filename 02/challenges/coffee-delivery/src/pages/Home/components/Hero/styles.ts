@@ -78,7 +78,7 @@ const HERO_BULLETS_COLORS = {
 } as const
 
 interface HeroBulletsProps {
-  backgroundColor: keyof typeof HERO_BULLETS_COLORS
+  $backgroundColor: keyof typeof HERO_BULLETS_COLORS
 }
 
 export const HeroBullets = styled.div<HeroBulletsProps>`
@@ -89,7 +89,7 @@ export const HeroBullets = styled.div<HeroBulletsProps>`
 
   > svg {
     background: ${props =>
-      props.theme.colors[HERO_BULLETS_COLORS[props.backgroundColor]]};
+      props.theme.colors[HERO_BULLETS_COLORS[props.$backgroundColor]]};
     color: ${props => props.theme.colors.background};
     border-radius: 999px;
     padding: 0.5rem;

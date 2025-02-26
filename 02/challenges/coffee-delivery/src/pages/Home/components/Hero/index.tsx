@@ -25,28 +25,28 @@ export function Hero() {
 
           <Info>
             <div>
-              <HeroBullets backgroundColor="yellow-dark">
+              <HeroBullets $backgroundColor="yellow-dark">
                 <ShoppingCart size={32} weight="fill" />
               </HeroBullets>
               <span>Compra simples e segura</span>
             </div>
 
             <div>
-              <HeroBullets backgroundColor="base-text">
+              <HeroBullets $backgroundColor="base-text">
                 <Package size={32} weight="fill" />
               </HeroBullets>
               <span>Embalagem mantém o café intacto</span>
             </div>
 
             <div>
-              <HeroBullets backgroundColor="yellow">
+              <HeroBullets $backgroundColor="yellow">
                 <Timer size={32} weight="fill" />
               </HeroBullets>
               <span>Entrega rápida e rastreada</span>
             </div>
 
             <div>
-              <HeroBullets backgroundColor="purple">
+              <HeroBullets $backgroundColor="purple">
                 <Coffee size={32} weight="fill" />
               </HeroBullets>
               <span>O café chega fresquinho até você</span>
