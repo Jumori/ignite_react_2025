@@ -8,13 +8,13 @@ interface InputNumberProps {
 export function InputNumber({ quantity = 0 }: InputNumberProps) {
   return (
     <Container>
-      <button>
+      <button aria-label="Remover">
         <Minus size={14} />
       </button>
 
       <span>{quantity}</span>
 
-      <button>
+      <button aria-label="Adicionar">
         <Plus size={14} />
       </button>
     </Container>
